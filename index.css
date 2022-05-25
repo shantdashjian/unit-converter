@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #1F2937;
+}
+
+#main-container {
+    color: #FFF;
+    background: linear-gradient(to left, #585DFE, #FB3796);
+    padding-top: 53px;
+    padding-bottom: 33px;
+}
+
+#main-heading {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#number-to-convert {
+    font-size: 98px;
+    font-weight: 800;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 4em;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#results-container {
+    padding-top: 10px; 
+    color: #fff; 
+}
+
+.result-container {
+  margin: 27px 0px; 
+}
+
+.result-heading {
+    font-weight: 600;
+    margin: 0px;
+}
+
+.result-content {
+    margin: 10px 0px;
+    color: #D2D2D2;
+}

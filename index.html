@@ -1,0 +1,26 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="main-container">
+            <h2 id="main-heading">Metric/Imperial unit conversion</h2>
+            <input id="number-to-convert" oninput="updateNumberToConvert()"></input>
+        </div>
+        <div id="results-container">
+            <div class="result-container">
+                <h4 class="result-heading">Length (Meter/Feet)</h4>
+                <p class="result-content" id="meter-feet"></p>
+            </div>
+            <div class="result-container">
+                <h4 class="result-heading">Volume (Liters/Gallons)</h4>
+                <p class="result-content" id="liters-gallons"></p>
+            </div>
+            <div class="result-container">
+                <h4 class="result-heading">Mass (Kilograms/Pounds)</h4>
+                <p class="result-content" id="kilograms-pounds"></p>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
