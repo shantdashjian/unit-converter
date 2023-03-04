@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background-image: url("background.jpeg");
+    background-image: url("images/background.jpeg");
     height: 285px;
     box-sizing: border-box;
     padding-top: 33px;
