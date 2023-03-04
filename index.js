@@ -15,7 +15,7 @@ convertBtn.addEventListener("click", () => {
     }
     lengthTextEl.textContent = buildConversionText(number, METERS_TO_FEET_RATE, 'meters', 'feet')
     volumeTextEl.textContent = buildConversionText(number, LITERS_TO_GALLONS_RATE, 'liters', 'gallons')
-    massTextEl.textContent = buildConversionText(number, KILOGRAMS_TO_POUNDS_RATE, 'kilograms', 'pounds')
+    massTextEl.textContent = buildConversionText(number, KILOGRAMS_TO_POUNDS_RATE, 'kilos', 'pounds')
 })
 
 function buildConversionText(number, conversionRate, firstUnit, secondUnit) {
