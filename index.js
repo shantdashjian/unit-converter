@@ -1,6 +1,6 @@
-const METERS_TO_FEET_RATE = 3.281
-const LITERS_TO_GALLONS_RATE = 0.264
-const KILOGRAMS_TO_POUNDS_RATE = 2.204
+const metersToFeetRate = 3.281
+const litersToGallonsRate = 0.264
+const kilogramsToPoundsRate = 2.204
 
 const numberEl = document.getElementById("number-el")
 const convertBtn = document.getElementById("convert-btn")
@@ -12,14 +12,21 @@ convertBtn.addEventListener("click", () => {
     let number = numberEl.value
     if (!number) {
         number = 0
+        numberEl.value = 0
+        alert('Enter a number')
     }
-    lengthTextEl.textContent = buildConversionText(number, METERS_TO_FEET_RATE, 'meters', 'feet')
-    volumeTextEl.textContent = buildConversionText(number, LITERS_TO_GALLONS_RATE, 'liters', 'gallons')
-    massTextEl.textContent = buildConversionText(number, KILOGRAMS_TO_POUNDS_RATE, 'kilos', 'pounds')
+    if (number < 0) {
+        number = 0
+        numberEl.value = 0
+        alert('Enter a positive number')
+    }
+    lengthTextEl.textContent = buildConversionText(number, metersToFeetRate, 'meters', 'feet')
+    volumeTextEl.textContent = buildConversionText(number, litersToGallonsRate, 'liters', 'gallons')
+    massTextEl.textContent = buildConversionText(number, kilogramsToPoundsRate, 'kilos', 'pounds')
 })
 
-function buildConversionText(number, conversionRate, firstUnit, secondUnit) {
-    const fromFirstToSecondUnit = number * conversionRate
-    const fromSecondToFirstUnit = number / conversionRate
-    return `${number} ${firstUnit} = ${fromFirstToSecondUnit.toFixed(3)} ${secondUnit} | ${number} ${secondUnit} = ${fromSecondToFirstUnit.toFixed(3)} ${firstUnit}`
+function buildConversionText(number, conversionRate, metricUnit, imperialUnit) {
+    const fromMetricToImperialUnit = number * conversionRate
+    const fromImperialToMetricUnit = number / conversionRate
+    return `${number} ${metricUnit} = ${fromMetricToImperialUnit.toFixed(3)} ${imperialUnit} | ${number} ${imperialUnit} = ${fromImperialToMetricUnit.toFixed(3)} ${metricUnit}`
 }
