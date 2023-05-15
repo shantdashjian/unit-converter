@@ -9,6 +9,7 @@ const volumeTextEl = document.getElementById("volume-text-el")
 const massTextEl = document.getElementById("mass-text-el")
 
 convertBtn.addEventListener("click", () => {
+    const number = numberEl.value
     lengthTextEl.textContent = buildConversionText(number, metersToFeetRate, 'meters', 'feet')
     volumeTextEl.textContent = buildConversionText(number, litersToGallonsRate, 'liters', 'gallons')
     massTextEl.textContent = buildConversionText(number, kilogramsToPoundsRate, 'kilos', 'pounds')
