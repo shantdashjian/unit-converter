@@ -14,7 +14,7 @@
     <h1 id="title">Metric/Imperial Unit Conversion</h1>
     <div id="number-container">
       <label id="number-label-el">Enter number to convert:</label>
-      <input type="number" min="0" id="number-el" placeholder="0">
+      <input type="text" id="number-el" oninput="numberizeAndResizeInputField()">
     </div>
     <button id="convert-btn">Convert</button>
   </header>
