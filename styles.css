@@ -22,8 +22,7 @@ body {
 
 #container {
 	width: 550px;
-	height: 729px;
-	box-sizing: border-box;
+	height: fit-content;
 	display: flex;
 	flex-direction: column;
 	margin: 20px auto;
@@ -48,12 +47,14 @@ header {
 	padding: 0.4em;
 	border-left: 3px solid var(--foreground-color);
 	border-bottom: 3px solid var(--foreground-color);
+	width: 2em;
+	text-align: center;
 }
 
 main {
 	background: #ECFDF5;
-	padding-top: 36px;
-	height: 444px;
+	padding: 1.7em 0 0 0;
+	height: fit-content;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
@@ -81,7 +82,7 @@ main {
 #title {
 	width: fit-content;
 	font-weight: bolder;
-	font-size: 28px;
+	font-size: 1.7rem;
 	color: var(--foreground-color) !important;
 	background: var(--background-color);
 	padding: 20px 20px;
