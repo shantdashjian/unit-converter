@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <meta charset="UTF-8">
-  <title>Unit Converter</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<title>Unit Converter</title>
 </head>
 <body>
 <div id="container">
-  <header>
-    <h1 id="title">Metric/Imperial Unit Conversion</h1>
-    <div id="number-container">
-      <label id="number-label-el">Enter number to convert:</label>
-      <input type="text" id="number-el" oninput="numberizeAndResizeInputField()">
-    </div>
-    <button id="convert-btn">Convert</button>
-  </header>
-  <main>
-    <section id="length-container" class="unit-container">
-      <h2 id="length-title" class="unit-title">Length (Meter/Feet)</h2>
-      <p id="length-text-el" class="unit-text">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
-    </section>
-    <section id="volume-container" class="unit-container">
-      <h2 id="volume-title" class="unit-title">Volume (Liters/Gallons)</h2>
-      <p id="volume-text-el" class="unit-text">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
-    </section>
-    <section id="mass-container" class="unit-container">
-      <h2 id="mass-title" class="unit-title">Mass (Kilograms/Pounds)</h2>
-      <p id="mass-text-el" class="unit-text">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
-    </section>
-  </main>
+	<header>
+		<section id="theme" class="theme"></section>
+		<h1 id="title">Metric/Imperial Unit Conversion</h1>
+		<div id="number-container">
+			<label id="number-label-el">Enter number to convert:</label>
+			<input type="text" id="number-el" oninput="numberizeAndResizeInputField()">
+		</div>
+		<button id="convert-btn">Convert</button>
+	</header>
+	<main>
+		<section id="length-container" class="unit-container">
+			<h2 id="length-title" class="unit-title">Length (Meter/Feet)</h2>
+			<p id="length-text-el" class="unit-text">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
+		</section>
+		<section id="volume-container" class="unit-container">
+			<h2 id="volume-title" class="unit-title">Volume (Liters/Gallons)</h2>
+			<p id="volume-text-el" class="unit-text">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
+		</section>
+		<section id="mass-container" class="unit-container">
+			<h2 id="mass-title" class="unit-title">Mass (Kilograms/Pounds)</h2>
+			<p id="mass-text-el" class="unit-text">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
+		</section>
+	</main>
 </div>
 <script src="index.js"></script>
 </body>
