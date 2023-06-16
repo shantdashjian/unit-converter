@@ -34,10 +34,10 @@ function numberizeAndResizeInputField() {
 function makeThemeDark(dark) {
 	if (dark) {
 		document.body.classList.add('dark')
-		themeEl.innerHTML = '<i class="fas fa-moon theme-icon"></i>'
+		themeEl.innerHTML = '<i class="fa-regular fa-moon theme-icon"></i>'
 	} else {
 		document.body.classList.remove('dark')
-		themeEl.innerHTML = '<i class="fas fa-sun theme-icon"></i>'
+		themeEl.innerHTML = '<i class="fa-regular fa-sun theme-icon"></i>'
 	}
 }
 
